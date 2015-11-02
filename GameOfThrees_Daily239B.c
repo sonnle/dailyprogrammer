@@ -34,14 +34,11 @@ int main(int argc, char* argv[])
 		fprintf(stderr, "Error: Need starting number");
 		exit(0);
 	}
-
 	int start = atoi(argv[1]);
 	printf("Starting number is: %d\n", start);
-
 	while(start != 1)
 	{
 		nextMove(&start);
 	}
-
 	return 0;
 }
