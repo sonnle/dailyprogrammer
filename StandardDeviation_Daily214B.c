@@ -21,12 +21,9 @@ double calcStdDev(int *pNumArray, int length);
 
 int main()
 {
-	int length1 = sizeof(numArray1) / sizeof(numArray1[0]);
-	int length2 = sizeof(numArray2) / sizeof(numArray2[0]);
-	int length3 = sizeof(numArray2) / sizeof(numArray2[0]);
-	printf("1 stdDev: %f\n", calcStdDev(pNumArray1, length1));
-	printf("2 stdDev: %f\n", calcStdDev(pNumArray2, length2));
-	printf("3 stdDev: %f\n", calcStdDev(pNumArray3, length3));
+	printf("1 stdDev: %f\n", calcStdDev(pNumArray1, sizeof(numArray1) / sizeof(numArray1[0])));
+	printf("2 stdDev: %f\n", calcStdDev(pNumArray2, sizeof(numArray2) / sizeof(numArray2[0])));
+	printf("3 stdDev: %f\n", calcStdDev(pNumArray3, sizeof(numArray2) / sizeof(numArray2[0])));
 }
 
 double calcStdDev(int *pNumArray, int length)
